@@ -449,12 +449,6 @@ lib/libqti_performance.so|e8aa933eddaff2f03e9237d8feb4c39ad513f5be
 lib64/libqti-perfd-client_system.so|1aa2f2565ef49d38fd626fb97488ccb7b07e67a3
 lib64/libqti-util_system.so|0edf17f8ba56899cf0f99cb11c5cc434b7a21c27
 lib64/libqti_performance.so|effa5f073fd27495c6ab91769609c9b152dc9141
-product/lib/vendor.qti.hardware.perf@1.0.so|14433f3baf7e760208f3e6ebbcb5583c5cfbf91c
-product/lib/vendor.qti.hardware.perf@2.0.so|67fbeed3fce2a6521f9c1d39b6cab1cd1550bd2a
-product/lib/vendor.qti.hardware.perf@2.1.so|dc7f324f1197428eaa448e0b6229586f75c1aa0a
-product/lib64/vendor.qti.hardware.perf@1.0.so|125a5c14b4e768ef7ce1d89abee9b2421f17b7ba
-product/lib64/vendor.qti.hardware.perf@2.0.so|d4f082dcf0fedec3376144f91bc163c3c863ebd4
-product/lib64/vendor.qti.hardware.perf@2.1.so|1cf36a88614405ead87759f9aee3cd02a56df831
 vendor/bin/hw/vendor.qti.hardware.perf@2.1-service|217e3b55fdfbc187d49ffd13a56c46e70b129f30
 vendor/bin/msm_irqbalance|b5e55b4b0934b65b7dd5d2201f9a70f6f77a4e7c
 vendor/etc/init/vendor.qti.hardware.perf@2.1-service.rc|0d7eaa2a99b16738f4e40d7ee7473bb0dd705d2c
@@ -471,9 +465,6 @@ vendor/lib/libqti-perfd-client.so|0bfd938e82f79e0a28b2ab6c4755b089cb1785b6
 vendor/lib/libqti-perfd.so|97dfec7818c1f3f76a0c3fd43894d832edc42fc4
 vendor/lib/libqti-util.so|5baec080c5c5c26778d2242bfc0e570ca92b7724
 vendor/lib/libqti-utils.so|b910050eb3a0f75a3624fc9987f2e139198d7f3e
-vendor/lib/vendor.qti.hardware.perf@1.0.so|14433f3baf7e760208f3e6ebbcb5583c5cfbf91c
-vendor/lib/vendor.qti.hardware.perf@2.0.so|67fbeed3fce2a6521f9c1d39b6cab1cd1550bd2a
-vendor/lib/vendor.qti.hardware.perf@2.1.so|dc7f324f1197428eaa448e0b6229586f75c1aa0a
 vendor/lib64/libadaptlaunch.so|9adf90f7b06f10ba5fc82dcca1c3ca4853bd201f
 vendor/lib64/liblearningmodule.so|ed8f0cede5bf68f753b3fc97ca0a1e088afa74fe
 vendor/lib64/libmeters-ns.so|2e1b6966935ee87077fdfb8fae156abcaa526ddc
@@ -484,9 +475,6 @@ vendor/lib64/libqti-perfd-client.so|0cf43512b08ee761fafa86d09bdea4f7b78fcea9
 vendor/lib64/libqti-perfd.so|9c8e53daaffc5c242fd336ff8a9bbcc087f9349e
 vendor/lib64/libqti-util.so|55219f860b7a39dbcc2947e382355fd71ad8087d
 vendor/lib64/libqti-utils.so|c74e0e5c650ecb9a0bb8e6fd7d95fc1e521597f6
-vendor/lib64/vendor.qti.hardware.perf@1.0.so|125a5c14b4e768ef7ce1d89abee9b2421f17b7ba
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|d4f082dcf0fedec3376144f91bc163c3c863ebd4
-vendor/lib64/vendor.qti.hardware.perf@2.1.so|1cf36a88614405ead87759f9aee3cd02a56df831
 
 # Perf-IOP - from LA.UM.8.6.r1-04700-89xx.0
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|873eb543fa49d0e9f5f7b29aa82906aee2fbea94
