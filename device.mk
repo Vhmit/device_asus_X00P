@@ -272,7 +272,8 @@ PRODUCT_PACKAGES += \
 
 # Packages
 PRODUCT_PACKAGES += \
-    QPGallery
+    QPGallery \
+    Via
 
 # Power
 PRODUCT_PACKAGES += \
