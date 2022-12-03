@@ -270,6 +270,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Packages
+PRODUCT_PACKAGES += \
+    QPGallery
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -423,6 +427,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-    
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
