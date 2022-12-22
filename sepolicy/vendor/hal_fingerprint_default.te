@@ -48,3 +48,5 @@ allow hal_fingerprint_default system_data_file:dir { write add_name create};
 allow hal_fingerprint_default system_data_file:file { getattr open read };
 
 set_prop(hal_fingerprint_default, fingerprint_prop);
+
+allow hal_fingerprint_default fingerprintd_data_file:dir { write };

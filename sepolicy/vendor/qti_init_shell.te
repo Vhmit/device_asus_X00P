@@ -4,3 +4,10 @@ allow qti_init_shell bluetooth_data_file:file r_file_perms;
 
 allow qti_init_shell ctl_start_prop:property_service set;
 allow qti_init_shell ctl_stop_prop:property_service set;
+
+allow qti_init_shell sysfs:file { write };
+allow qti_init_shell vfat:dir { read };
+allow qti_init_shell vfat:dir { open };
+allow qti_init_shell vfat:file { getattr };
+allow qti_init_shell vfat:file { read };
+allow qti_init_shell vfat:file { open };
