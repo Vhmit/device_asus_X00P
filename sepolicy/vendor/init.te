@@ -1,9 +1,6 @@
 allow init proc_boot_reason:file r_file_perms;
 allow init vendor_file:file { execute };
-
-allow init sysfs:dir { create };
 allow init sysfs:file { setattr };
-allow init system_file:file { execute_no_trans };
 allow init diag_device:chr_file { read write };
 allow init diag_device:chr_file { open };
 allow init diag_device:chr_file { ioctl };
@@ -14,7 +11,6 @@ allow init self:netlink_route_socket { nlmsg_read };
 allow init self:netlink_route_socket { read };
 allow init netutils_wrapper_exec:file { execute };
 allow init netutils_wrapper_exec:file { read open };
-allow init netutils_wrapper_exec:file { execute_no_trans };
 allow init netutils_wrapper_exec:file { getattr };
 allow init self:rawip_socket { create };
 allow init self:rawip_socket { getopt };
