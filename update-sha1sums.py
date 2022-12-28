@@ -19,11 +19,11 @@
 from hashlib import sha1
 import sys
 
-device='msm8937-common'
+device='X00P'
 vendor='asus'
 
 lines = [ line for line in open('proprietary-files-qc.txt', 'r') ]
-vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
+lines = [ line for line in open('proprietary-files.txt', 'r') ]
 needSHA1 = False
 
 def cleanup():

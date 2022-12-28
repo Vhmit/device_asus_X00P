@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE_COMMON=msm8937-common
+DEVICE=X00P
 VENDOR=asus
 
 # Load extract_utils and do some sanity checks
@@ -62,23 +62,20 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-    product/lib64/libdpmframework.so)
+    vendor/lib/libarcsoft_nighthawk.so | vendor/lib/libarcsoft_piczoom.so | vendor/lib/libarcsoft_night_shot.so | product/lib64/libdpmframework.so | vendor/lib/libarcsoft_videostab.so)
         "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+        "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
         ;;
     esac
 }
 
-# Initialize the helper for common device
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true "$CLEAN_VENDOR"
+# Initialize the helper
+setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" \
+extract "$MY_DIR"/proprietary-files.txt "$SRC" \
     "${KANG}" --section "${SECTION}"
 
-if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
-    # Reinitialize the helper for device
-    setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
-    extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" \
-    "${KANG}" --section "${SECTION}"
-fi
+BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 "$MY_DIR"/setup-makefiles.sh
