@@ -120,7 +120,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    GcamGo
 
 PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
