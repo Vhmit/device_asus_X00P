@@ -54,6 +54,9 @@ on init
     write /proc/sys/vm/page-cluster 0
     write /proc/sys/vm/swappiness 130
 
+    rm /cache/boot_lc_main.txt
+    start boot_lc_main
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -182,6 +185,13 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     user root
     group system wakelock
 
+service boot_lc_main /system/bin/logcat -f /cache/boot_lc_main.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
 on charger
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
@@ -213,3 +223,6 @@ service ppd /vendor/bin/mm-pp-dpps
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
     write /proc/sys/vm/swappiness 130
+    
+on property:sys.boot_completed=1
+    stop boot_lc_main
