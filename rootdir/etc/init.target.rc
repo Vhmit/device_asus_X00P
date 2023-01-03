@@ -43,6 +43,9 @@ on fs
     mkdir /mnt/vendor/persist/bms 0700 root system
     restorecon_recursive /mnt/vendor/persist
 
+    rm /cache/boot_lc_main.txt
+    start boot_lc_main
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -118,6 +121,13 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
+
+service boot_lc_main /system/bin/logcat -f /cache/boot_lc_main.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
 
 on boot
     start rmt_storage
@@ -305,3 +315,6 @@ on property:sys.boot_completed=1 && property:sys.ftrace.debug.on=0
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
     write /proc/sys/vm/swappiness 130
+
+on property:sys.boot_completed=1
+    stop boot_lc_main
