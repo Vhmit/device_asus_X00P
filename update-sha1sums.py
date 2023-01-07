@@ -22,7 +22,6 @@ import sys
 device='X00P'
 vendor='asus'
 
-lines = [ line for line in open('proprietary-files-qc.txt', 'r') ]
 lines = [ line for line in open('proprietary-files.txt', 'r') ]
 needSHA1 = False
 
@@ -72,7 +71,7 @@ if len(sys.argv) == 2 and sys.argv[1] == '-c':
 else:
   update()
 
-with open('proprietary-files-qc.txt', 'w') as file:
+with open('proprietary-files.txt', 'w') as file:
   for line in lines:
     file.write(line)
 
