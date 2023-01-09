@@ -15,7 +15,6 @@
 #
 
 DEVICE_PATH := device/asus/X00P
-BOARD_VENDOR := asus
 
 # Architecture
 TARGET_ARCH := arm64
