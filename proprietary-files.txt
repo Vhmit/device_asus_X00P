@@ -219,7 +219,7 @@ vendor/lib64/libswvdec.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoutils.so
 
-# Camera Actuators - from Stock - QKQ1.191002.002-17.00.2003.23-20200401
+# Camera Actuators - from X00P - QKQ1.191002.002-17.00.2003.23-20200401
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
@@ -1899,14 +1899,6 @@ vendor/lib64/hw/mafp_factory.default.so
 vendor/lib64/libfprint-x64.so
 
 # Firmware - from X00P - QKQ1.191002.002-17.00.2003.23-20200401
-vendor/etc/firmware/fngap64_8917.b00
-vendor/etc/firmware/fngap64_8917.b01
-vendor/etc/firmware/fngap64_8917.b02
-vendor/etc/firmware/fngap64_8917.b03
-vendor/etc/firmware/fngap64_8917.b04
-vendor/etc/firmware/fngap64_8917.b05
-vendor/etc/firmware/fngap64_8917.b06
-vendor/etc/firmware/fngap64_8917.mdt
 vendor/etc/firmware/fngap64_8937.b00
 vendor/etc/firmware/fngap64_8937.b01
 vendor/etc/firmware/fngap64_8937.b02
@@ -1915,15 +1907,6 @@ vendor/etc/firmware/fngap64_8937.b04
 vendor/etc/firmware/fngap64_8937.b05
 vendor/etc/firmware/fngap64_8937.b06
 vendor/etc/firmware/fngap64_8937.mdt
-vendor/etc/firmware/mafp_8917.b00
-vendor/etc/firmware/mafp_8917.b01
-vendor/etc/firmware/mafp_8917.b02
-vendor/etc/firmware/mafp_8917.b03
-vendor/etc/firmware/mafp_8917.b04
-vendor/etc/firmware/mafp_8917.b05
-vendor/etc/firmware/mafp_8917.b06
-vendor/etc/firmware/mafp_8917.mbn
-vendor/etc/firmware/mafp_8917.mdt
 vendor/etc/firmware/mafp_8937.b00
 vendor/etc/firmware/mafp_8937.b01
 vendor/etc/firmware/mafp_8937.b02
@@ -1933,14 +1916,6 @@ vendor/etc/firmware/mafp_8937.b05
 vendor/etc/firmware/mafp_8937.b06
 vendor/etc/firmware/mafp_8937.mbn
 vendor/etc/firmware/mafp_8937.mdt
-vendor/etc/firmware/sw_fp_8917.b00
-vendor/etc/firmware/sw_fp_8917.b01
-vendor/etc/firmware/sw_fp_8917.b02
-vendor/etc/firmware/sw_fp_8917.b03
-vendor/etc/firmware/sw_fp_8917.b04
-vendor/etc/firmware/sw_fp_8917.b05
-vendor/etc/firmware/sw_fp_8917.b06
-vendor/etc/firmware/sw_fp_8917.mdt
 vendor/etc/firmware/sw_fp_8937.b00
 vendor/etc/firmware/sw_fp_8937.b01
 vendor/etc/firmware/sw_fp_8937.b02
@@ -2066,16 +2041,20 @@ vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 vendor/lib/hw/vulkan.msm8937.so|b1f71dd1550e9b0fc63141f01e662d47d3d5284e
 vendor/lib64/hw/vulkan.msm8937.so|dff8ac33c9106c670ad07cbd23b218b32a050ff9
 
-# Graphics firmware - from X00P - PPR1.180610.009-16.00.1906.411-20190712
-vendor/firmware/a530v1_pfp.fw|0864291b99bed712edfcffa94be7b4595d3af306
-vendor/firmware/a530v1_pm4.fw|6a82a4fb4035fa2a933c1a26b5535d7ec7c0ac4c
-vendor/firmware/a530v2_seq.fw2|63b6d25594a5c1f4217d996a2b636e17a29fc840
-vendor/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
-vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
-vendor/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
-vendor/firmware/a530_pfp.fw|137b74a30e664f387fcd1e5562474a6c5d8dd6b4
-vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
-vendor/firmware/a540_gpmu.fw2|3530f10b4825a3b08c79e0bcfaf6471ec8422f24
+# Graphics firmware - from X00P - QKQ1.191002.002-17.00.2003.23-20200401
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a530_gpmu.fw2
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a530v3_gpmu.fw2
+vendor/firmware/a530v3_seq.fw2
+vendor/firmware/a540_gpmu.fw24
 
 # Ipacm - from tissot - V10.0.9.0.PDHMIXM
 vendor/bin/ipacm-diag|9300f8da22941c2bfacc2ff96f83f2beebd4dcc1
