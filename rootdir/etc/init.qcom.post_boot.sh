@@ -195,7 +195,7 @@ function 8937_sched_dcvs_hmp()
     echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
     echo 1094400 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
     echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
-    echo "1 960000:85 1094400:90 1344000:80" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
+    echo "1 345600:85 1094400:90 1344000:80" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
     echo 40000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time
     echo 40000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/sampling_down_factor
 
@@ -207,7 +207,7 @@ function 8937_sched_dcvs_hmp()
     echo 20000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/timer_rate
     echo 768000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq
     echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
-    echo "1 768000:90" > /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads
+    echo "1 249600:90" > /sys/devices/system/cpu/cpu4/cpufreq/interactive/target_loads
     echo 40000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/min_sample_time
     echo 40000 > /sys/devices/system/cpu/cpu4/cpufreq/interactive/sampling_down_factor
 
@@ -2134,8 +2134,8 @@ case "$target" in
                 else
                     8937_sched_dcvs_hmp
                 fi
-                echo 960000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-                echo 768000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+                echo 345600 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+                echo 249600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
                 # Disable L2-GDHS low power modes
                 echo N > /sys/module/lpm_levels/system/pwr/pwr-l2-gdhs/idle_enabled
                 echo N > /sys/module/lpm_levels/system/pwr/pwr-l2-gdhs/suspend_enabled
